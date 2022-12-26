@@ -1,0 +1,7 @@
+.example-card {
+    flex: 1 0 500px;
+    box-sizing: border-box;
+    background-color: #dddddd;
+    
+    margin: 1rem .25em;
+ }

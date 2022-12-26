@@ -1,0 +1,26 @@
+.main-div{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .bg-color {
+    height: 100%;
+  width: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-image: url('../../../images/login.jpg');
+  }
+
+  .bottom-pre {
+    /* display: block;
+    margin-left: auto;
+    margin-right: auto;
+    */
+    /* position:absolute;  */
+   margin-left:57px;
+  }

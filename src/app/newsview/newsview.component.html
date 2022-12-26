@@ -1,0 +1,47 @@
+
+<mat-toolbar color="primary">
+  <span>Products</span>
+  <span class="example-spacer"></span>
+</mat-toolbar>
+
+<div class="background-image"></div>
+<div class="content">
+<div class="bg-color">
+  <div class="container">
+    <div class="row">
+      <!-- <div class="card-deck"> -->
+      <mat-card class="col-xs-12 col-sm-9 col-md-7 col-lg-5 mx-auto my-4 example-card card-flyer"
+        *ngFor="let article of mArticles | paginate: {itemsPerPage:10, currentPage: q}">
+        <mat-card-header>
+          <mat-card-title>{{ article.title }}</mat-card-title>
+          <mat-card-subtitle>{{ article.source.name }}</mat-card-subtitle>
+        </mat-card-header>
+
+        <div class="image-box">
+          <img mat-card-image width="200" height="200" class="img-article" src="{{ article.urlToImage }}" alt="" />
+        </div>
+        <div class="text-box">
+          <mat-card-content>
+            <p>
+              {{ article.description }}
+            </p>
+          </mat-card-content>
+        </div>
+
+        <mat-card-actions class="action-buttons">
+          <div class="bottom-pre btn-box">
+            <button mat-button color="primary" (click)="addtofavRE(article.title)">
+              <mat-icon>add_shopping_cart</mat-icon>Add to Cart
+            </button>
+            
+          </div>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class= "pagi">
+  <pagination-controls (pageChange)= "q = $event"></pagination-controls>
+</div>

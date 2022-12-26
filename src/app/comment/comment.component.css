@@ -1,0 +1,16 @@
+.main-div{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .bottom-pre {
+    /* display: block;
+    margin-left: auto;
+    margin-right: auto;
+    */
+    /* position:absolute;  */
+   margin-left:50px;
+  }

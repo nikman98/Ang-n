@@ -1,0 +1,56 @@
+<!-- <mat-toolbar class="navbar navbar-expand-md bg-dark " >
+     
+    <span>WorldPress</span>
+<div class ="lft">
+    <button class= "cl-button" mat-raised-button (click)="showhome()"> Home </button>
+    <button  class= "cl-button" mat-raised-button (click)="showlogin()" > Login </button>
+    <button class= "cl-button" mat-raised-button (click)="showreg()"> Register </button>
+    <button class= "cl-button" mat-raised-button (click)="showfav()"> Favorite </button>
+    <button class= "cl-button" mat-raised-button (click)="showcomments()"> Overall Report </button>
+    <button class= "cl-button" mat-raised-button (click)="showsearch()"> Search </button>
+    <button class= "cl-button" mat-raised-button (click)="showlogout()"> Logout </button>
+</div>
+     
+  </mat-toolbar> -->
+
+
+
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark ">
+    <a class="navbar-brand" href="#">ECOM</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav  lft">
+        
+        <li class="nav-item">
+            <!-- <button class= "cl-button" mat-raised-button (click)="showhome()"> Home </button> -->
+            <a class="nav-link" (click)="showhome()"> Home </a>
+          <!-- <a class="nav-link" routerLink="/home">Home</a> -->
+        </li>
+       
+
+        <li class="nav-item">
+            <!-- <button class= "cl-button" mat-raised-button (click)="showfav()"> Favorite </button> -->
+            <a class="nav-link" (click)="showfav()">  Cart  </a>
+          <!-- <a class="nav-link" routerLink="/contact-create">Create</a> -->
+        </li>
+
+       
+
+        <li class="nav-item">
+            <!-- <button class= "cl-button" mat-raised-button (click)="showsearch()"> Search </button> -->
+            <a class="nav-link" (click)="showsearch()"> Search </a>
+          <!-- <a class="nav-link" routerLink="/contact-create">Create</a> -->
+        </li>
+
+        <li class="nav-item">
+            <!-- <button class= "cl-button" mat-raised-button (click)="showlogout()"> Logout </button> -->
+            <a class="nav-link" (click)="showlogout()"> Logout </a>
+          <!-- <a class="nav-link" routerLink="/contact-create">Create</a> -->
+        </li>
+    
+      </ul>
+    </div>
+  </nav>

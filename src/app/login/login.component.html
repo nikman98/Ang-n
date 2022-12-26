@@ -1,0 +1,78 @@
+
+<!-- <h1> Login Form</h1>
+
+<form name="user">
+ <input type=text name="txtname" matInput [formControl]="username" 
+       placeholder="Enter username" required>
+
+      <small> {{checkUsername()}} </small>
+<br>
+  <input type=text name="txtpass" matInput [formControl]="password"
+              placeholder="Enter password" required minlength="6">
+<br>
+
+<button (click)="loginData()"> Login </button>
+
+
+
+</form>
+ -->
+
+
+ <!-- <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Personal data
+        </mat-panel-title>
+      
+      </mat-expansion-panel-header>
+    
+      <mat-form-field>
+        <mat-label>First name</mat-label>
+        <input matInput>
+      </mat-form-field>
+    
+      <mat-form-field>
+        <mat-label>Age</mat-label>
+        <input matInput type="number" min="1">
+      </mat-form-field>
+    
+    </mat-expansion-panel> -->
+
+    
+ <mat-toolbar>
+      <span>LOGIN</span>
+    </mat-toolbar>
+
+    <div class="bg-color">
+      <div class="container">
+    <div class="main-div">
+    <mat-card class="my-card">
+       <mat-card-content>
+          <form class="my-form">
+             <mat-form-field >
+                <mat-label>Email</mat-label>
+                <input  matInput  placeholder="Email" [formControl]="mailid" name="txtname" required>
+             </mat-form-field>
+            <br>
+             <mat-form-field class="full-width">
+                <mat-label>Password</mat-label>
+                <input  matInput  placeholder="Password" [formControl]="password" name="txtpass" required>
+             </mat-form-field>
+          </form>
+       </mat-card-content>
+       <div class = "bottom-pre">
+       <mat-card-actions>
+        
+          <button mat-raised-button (click)="loginData()" color="primary">LOGIN</button>
+       
+         <button mat-raised-button (click)="RegisterData()" color="primary">REGISTER</button>
+        
+      </mat-card-actions>
+    </div>
+
+    </mat-card>
+
+    </div>
+  </div>
+  </div>

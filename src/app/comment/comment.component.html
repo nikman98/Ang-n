@@ -1,0 +1,45 @@
+<!-- <mat-toolbar color="primary">
+    
+    <span>Comment</span>
+    <span class="example-spacer"></span>
+    
+  </mat-toolbar>
+
+  <form class="example-form">
+    <mat-form-field class="example-full-width">
+      <mat-label>Leave a comment</mat-label>
+      <textarea matInput [(ngModel)]="cmtobj.commentnws" placeholder="Type real or fake"></textarea>
+    </mat-form-field>
+  </form>
+
+  <mat-card-actions>
+    <button mat-raised-button (click)="addcmt()" color="primary">COMMENT</button>
+</mat-card-actions>
+ -->
+
+
+
+
+<mat-toolbar>
+  <span>COMMENT</span>
+</mat-toolbar>
+<div class="main-div">
+<mat-card class="my-card">
+   <mat-card-content>
+      <form class="my-form">
+         <mat-form-field >
+            <mat-label>Comment</mat-label>
+            <!-- <input  matInput  placeholder="Type real or fake"  [(ngModel)]="commentfrmhtml" > -->
+            <input  matInput  name="id" [(ngModel)]="cmtobj.commentnws" placeholder="Type real or fake">
+         </mat-form-field>
+        
+      </form>
+   </mat-card-content>
+   <div class = "bottom-pre">
+   <mat-card-actions>
+    <button mat-raised-button (click)="addcmt()" color="primary">COMMENT</button>
+    
+  </mat-card-actions>
+</div>
+</mat-card>
+</div>

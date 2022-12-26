@@ -1,0 +1,44 @@
+
+<mat-toolbar>
+    <span>Register</span>
+  </mat-toolbar>
+
+  <div class="bg-color">
+  <div class="main-div">
+  <mat-card class="my-card">
+   
+     <mat-card-content>
+        <form class="my-form">
+            <mat-form-field class="full-width">
+                <mat-label>Username</mat-label>
+                <input  matInput  placeholder="Username" [formControl]="username" name="txtuser" required>
+             </mat-form-field>
+             <br>
+           <mat-form-field >
+              <mat-label>Email</mat-label>
+              <input  matInput type="email"  placeholder="Email" [formControl]="mailid" name="txtname" required>
+           </mat-form-field>
+          <br>
+           <mat-form-field class="full-width">
+              <mat-label>Password</mat-label>
+              <input  matInput  placeholder="Password" [formControl]="password" name="txtpass" required minlength="6">
+           </mat-form-field>
+
+           <br>
+           <mat-form-field class="full-width">
+              <mat-label>Confirm Password</mat-label>
+              <input  matInput  placeholder="Password" [formControl]="passwordcnf" name="txtpass" required minlength="6">
+           </mat-form-field>
+           
+        </form>
+     </mat-card-content>
+     <div class="bottom-pre">
+     <mat-card-actions>
+      
+        <button mat-raised-button (click)="registerData()" color="primary">Register</button>
+      
+     </mat-card-actions>
+   </div>
+  </mat-card>
+</div>
+</div>
